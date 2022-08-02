@@ -50,8 +50,7 @@ Date: 23/07/2022
 """
 
 import random
-
-import numpy as np
+import numpy
 
 
 MESSAGE = """Press "A" to get a random integer.
@@ -72,8 +71,9 @@ def get_rand():
     '''Returns a random integer.'''
     """TODO: Add your code here 
         Hint: Using random.randint() function.
+        
     """
-    my_randint = 0
+    my_randint = random.randint(0, 100) #DONE - Michael
     return my_randint
 
 

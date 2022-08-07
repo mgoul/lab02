@@ -75,9 +75,9 @@ def get_rand():
 
 def toss_coin():
     '''Return either Head or Tail'''
-    random_num = random.randint(1,2)
+    random_num = get_rand()
     coin = 'Head'
-    if random_num == 1:
+    if random_num % 2 == 1:
         coin = 'Tail'
     
     return coin
